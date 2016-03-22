@@ -12,13 +12,45 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Longitude"
-        android:id="@+id/mLongitudeText"/>
+        android:text="Address"
+        android:id="@+id/txtAddress"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Latitude"
-        android:id="@+id/mLatitudeText"
-        android:layout_below="@+id/mLongitudeText"
+        android:text="City"
+        android:id="@+id/txtCity"
+        android:layout_below="@+id/txtAddress"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="State"
+        android:id="@+id/txtState"
+        android:layout_below="@+id/txtCity"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country"
+        android:id="@+id/txtCountry"
+        android:layout_below="@+id/txtState"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Postal Code"
+        android:id="@+id/txtPostalCode"
+        android:layout_below="@+id/txtCountry"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Known Name"
+        android:id="@+id/txtKnownName"
+        android:layout_below="@+id/txtPostalCode"
         android:layout_alignParentStart="true" />
 </RelativeLayout>
