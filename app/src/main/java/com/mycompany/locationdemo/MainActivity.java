@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.widget.TextView;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -78,6 +79,21 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
             String country = addresses.get(0).getCountryName();
             String postalCode = addresses.get(0).getPostalCode();
             String knownName = addresses.get(0).getFeatureName();
+
+            TextView txtAddress = (TextView) findViewById(R.id.txtAddress);
+            TextView txtCity = (TextView) findViewById(R.id.txtCity);
+            TextView txtState = (TextView) findViewById(R.id.txtState);
+            TextView txtCountry = (TextView) findViewById(R.id.txtCountry);
+            TextView txtPostalCode = (TextView) findViewById(R.id.txtPostalCode);
+            TextView txtKnownName = (TextView) findViewById(R.id.txtKnownName);
+
+            txtAddress.setText(address);
+            txtCity.setText(city);
+            txtState.setText(state);
+            txtCountry.setText(country);
+            txtPostalCode.setText(postalCode);
+            txtKnownName.setText(knownName);
+
         }
     }
 
